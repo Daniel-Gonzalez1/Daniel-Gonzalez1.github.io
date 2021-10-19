@@ -127,6 +127,7 @@
     border-color: crimson;
 }
 
+
 /* about section styling */
 section{
     padding: 100px 0;
@@ -163,7 +164,7 @@ section{
     padding: 5px;
     background: #fff;
     transform: translateX(-50%);
-
+    
 }
 .about .about-content{
     display: flex;
@@ -290,7 +291,7 @@ section{
         justify-content: center;
         margin: 0 auto 60px;
     }
-}
+
 
 @media (max-width: 690px){
     .max-width{
