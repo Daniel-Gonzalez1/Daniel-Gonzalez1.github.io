@@ -15,12 +15,14 @@
 .navbar{
     position: fixed;
     width: 100%;
-    padding: 30px 0;
+    z-index: 999;
+    background: #070c1a;
+    padding: 15px 0;
     font-family: "Ubuntu", sans-serif;
     transition: all 0.3s ease;
 }
 
-.navbar.sticky{
+.navbar .sticky{
     padding: 15px 0;
     background: #070c1a;
 }
@@ -125,6 +127,94 @@
     border-color: crimson;
 }
 
+/* about section styling */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+.about .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: -160px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #000000;
+    transform: translateX(-50%);
+
+}
+.about .title::after{
+    content: "Who I am";
+    position: absolute;
+    bottom: -174px;
+    left: 50%;
+    font-size: 20px;
+    color: #ccff00;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 50%;
+}
+.about .about-content .left img{
+    height: 580px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 70px;
+}
+
+.about .about-content .right{
+    width: 50%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: #ccff00;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: #ccff00;
+    color: #070c1a;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 100px;
+    border: 2px solid #ccff00;
+    transition: all 0.3 ease;
+}
+.about .about-content .right a:hover{
+    color: #070c1a;
+    background: none;
+    border-color: crimson;
+}
+
+
+
 /* responsive media query start */
 @media (max-width: 1104px){
     .home .max-width{
@@ -172,7 +262,6 @@
     }
     .home .home-content .text-2{
         font-size: 70px;
-
     }
     
     .home .home-content .text-3{
@@ -182,6 +271,9 @@
     .home .home-content a{
         font-size: 23px;
         padding: 10px 30px;
+    }
+    .about .about-content .column{
+        width: 50%;
     }
 }
 
