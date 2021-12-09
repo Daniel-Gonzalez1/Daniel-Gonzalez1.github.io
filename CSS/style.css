@@ -85,14 +85,14 @@ html{
     display: flex;
 }
 #pic img{
-    width: 320px;
+    width: 500px;
     height: 380px;
 }
 #intro{
     display: flex;
     flex-direction: column;
     text-align: justify;
-    padding: 10px;
+    padding: 100px;
 }
 #intro h2{
     font-size: 2rem;

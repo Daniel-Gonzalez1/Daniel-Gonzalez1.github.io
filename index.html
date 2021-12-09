@@ -1,10 +1,9 @@
-<!-- Fungerer som en lenke til et sett med regler for en HTML-side. Doctype -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel's Portfolio</title>
+    <title>Daniel's Nettside</title>
     <link rel="stylesheet" href="CSS\style.css">
     <link rel="stylesheet" media="screen and (max-width:800px)" href="CSS\tablet.css">
     <link rel="stylesheet" media="screen and (max-width:530px)" href="CSS\phone.css">
@@ -12,34 +11,36 @@
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#social">Social media</a></li>
-            <li><a href="#contact">Contact me</a></li>
+            <li><a href="#home">Hjem</a></li>
+            <li><a href="#about">Om</a></li>
+            <li><a href="#projects">Prosjekter</a></li>
+            <li><a href="#social">Sosiale Medier</a></li>
+            <li><a href="#contact">Kontakt Meg</a></li>
         </ul>
     </nav>
 
     <section id="home">
         <div class="main">
-            <h1 class="headings">Hello, my name is <br> Daniel Gonzalez <br> and this is my portfolio! </h1>
+            <h1 class="headings">Hei, mitt navn er <br> Daniel Gonzalez <br> og dette er min nettside! </h1>
         </div>
     </section>
 
     <section id="about">
         <div id="pic">
-            <h1 class="headings">ABOUT ME</h1>
-            <img src="/Images/Picture of me.jpg" alt="">
+            <h1 class="headings">Om Cruit AS</h1>
+            <img src="/Images/Cruit image.jfif" alt="">
             <div id="intro">
-                <h2>DANIEL GONZALEZ</h2>
-                <p>Age: 17</p>
-                <p>Sports: Football & Formula 1</p>
+                <h2>Flinke Med Folk!</h2>
+                <p>Beliggenhet: Karl Johans gate 25</p>
+                <p>Motto: Flinke Med Folk!</p>
+                <p>Arbeidsdag: 09.00 - 15:00</p>
+                <p>Kontaktperson: Sebastian Næss Langaas</p>
             </div>
         </div>
     </section>
 
     <section id="projects">
-        <h1 class="headings">PROJECTS</h1>
+        <h1 class="headings">PROSJEKTER</h1>
         <div class="gallery">
             <img src="/Images/HTML.png" alt="">
             <img src="/Images/Brønn.png" alt="">
@@ -62,22 +63,22 @@
 
     <footer>
     <section id="social">
-        <h1 class="headings">SOCIAL MEDIA</h1>
+        <h1 class="headings">Mine Sosiale Medier</h1>
         <div class="row">
             <div class="box">
                 <img src="/Images/instagram (2).png" alt="">
                 <h1 class="headings">Instagram</h1>
-                <a href="https://www.instagram.com/iamferno99/" target="blank">Click here</a>
+                <a href="https://www.instagram.com/iamferno99/" target="blank">Trykk her</a>
             </div>
             <div class="box">
                 <img src="/Images/facebook.png" alt="">
                 <h1 class="headings">Facebook</h1>
-                <a href="https://www.facebook.com/danielfernando.myrvanggonzalez.7" target="blank">Click here</a>
+                <a href="https://www.facebook.com/danielfernando.myrvanggonzalez.7" target="blank">Trykk her</a>
             </div>
             <div class="box">
                 <img src="/Images/youtube.png" alt="">
                 <h1 class="headings">Youtube</h1>
-                <a href="https://www.youtube.com/channel/UCYN4wf8nzAqz1XvWhG1qWpg" target="blank">Click here</a>
+                <a href="https://www.youtube.com/channel/UCYN4wf8nzAqz1XvWhG1qWpg" target="blank">Trykk her</a>
             </div>
 
         </div>
@@ -85,11 +86,11 @@
     </footer>
 
     <section id="contact">
-        <h1 class="headings">CONTACT ME HERE</h1>
+        <h1 class="headings">Kontakt Meg Her!</h1>
         <form action="" class="form"></form>
-        <input type="text" name="name" class="input" placeholder="Enter Your Name">
-        <Input type="email" name="email" class="input" placeholder="Enter Your Email">
-            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+        <input type="text" name="name" class="input" placeholder="Navn">
+        <Input type="email" name="email" class="input" placeholder="Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Melding"></textarea>
             <input type="submit" value="SEND" id="send">
     </section>
 </body>
